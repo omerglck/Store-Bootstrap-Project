@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+@mixin hover{
+    transform:scale(1.1);
+    transition:ease .3s;
+    color:#AFB0AF !important;
+}
+
+// HEADER
+
+.navbar{
+    background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    &-brand{
+        color:#42535F;
+    }
+    .nav-link{
+        &:hover{
+        @include hover;
+    }
+    }
+    &-brand{
+        b{
+            color: #253441;
+            font-size:25px;
+        }
+    }
+
+}
+
+// MAİN
+.main{
+    .h1btn{
+        background: #495864 !important;
+        color:white !important;
+        transition: 0.4s !important;
+
+        &:hover{
+            @include hover;
+
+        }
+
+    }
+}
+
+/*
+.main .container .btn{
+    background: #495864 !important;
+    color:white !important;
+    transition: 0.4s !important;
+    &:hover{
+        @include hover;
+    }
+
+
+
+}
+*/
+
+
+.carousel{
+    &-inner{
+        width:100%;
+    }
+    &-item{
+        img{
+            background-size:cover;
+            width:100%;
+            border-radius:20px ;
+        }
+    }
+}
+
+
+// PRODUCT
+.product{
+    background:linear-gradient(109.6deg, rgba(0, 0, 0, 0.075) 11.2%, rgba(52, 77, 80, 0.356) 91.1%), url(https://images.unsplash.com/photo-1616910137498-6df8ba3be624?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGlnaHQlMjBncmF5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+    margin:0 80px;
+    height: 500px;
+    .card{
+        border:none;
+        background: none;
+        color:white;
+        transition: .3s;
+        a{
+            border:none;
+            background-color: #304352;
+            &:hover{
+                @include hover;
+            }
+        }
+        img{
+            margin-top:45px;
+            margin-left: 90px;
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        &:hover{
+            transform: scale(1.1);
+            transition: .3s;
+            
+        }
+    }
+
+}
+    
+    
+// ALBUM
+.album{
+    padding: 50px;
+    margin: 0 auto;
+    border-radius: 15px;
+    width:1000px;
+
+    &-card{
+        p{
+            bottom:20px;
+            left:50px;
+            text-align: center;
+            display: none;
+        }
+        &:hover p{
+            display: block;
+            color:#a6d0f1 !important;
+            transition: .3s;
+
+        }
+        
+    }
+    img{
+        height: 300px;
+        width: 100%;
+        margin:10px 10px;
+        object-fit: cover;
+        border-radius:15px;
+        &:hover{
+            opacity: 0.7;
+            transition: all .3s;
+            cursor:pointer;
+        }
+    }
+}
+// ABOUT
+.about{
+    width: 900px;
+    margin: 0 auto;
+    cursor: pointer;
+    .col-4{
+        
+        box-shadow: 2px 2px 5px gray;
+        margin-top: 20px;
+        i{
+            font-size: 25px;
+            background-color: #253441;
+            color:white;
+            width:40px;
+            border-radius: 5px;
+        }
+    }
+}
+    
+// FOOTER
+footer{
+    h2{
+    color:#30404e;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+    transition: all .4s;
+    span{
+        font-weight: bolder;
+        color:#bcd6e9;
+        &:hover{
+            display: inline-block;
+            transform: scale(1.3);
+            transition: all .4s;
+            cursor: pointer;
+    }
+        
+    }
+    &:hover{
+            display: inline-block;
+            transform: scale(1.1);
+            cursor: pointer;
+            transition: all .4s;
+    }
+    }  
+    li{
+        a{
+            transition: all .4s;
+            color:#bcd6e9 !important;
+            &:hover{
+                transform: scale(1.1);
+                transition: all .4s;
+            }
+        }
+        
+    }  
+}
+    
+    
+    
+    
+    
